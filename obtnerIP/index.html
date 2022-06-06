@@ -1,0 +1,36 @@
+<head>
+    <script type="text/javascript" src="funcion.js"></script>
+    <title>tu ip publica</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+ 
+</head>
+<body>
+    <div class="caja"> 
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <h1>TU IP PUBLICA ES</h1>
+    
+
+
+<div id="ip">
+    <p id="resultado"></p>
+</div>
+
+<!-- script que llamo un documento json y lo paso al html -->
+<script>
+    
+    window.addEventListener('load', () => {
+
+        fetch('https://api.ipify.org/?format=json')
+        .then(respuesta => respuesta.json())
+        .then(datos => {
+            console.log(typeof datos);
+
+            document.querySelector('#resultado').innerText = datos.ip;
+        })
+    });
+</script>
+   </div>
+   <div class="abajo"><p>pagina hecha por Francisco José Ben Ramírez </p></div>
+</body>

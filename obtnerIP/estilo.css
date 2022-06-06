@@ -1,0 +1,27 @@
+body{background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(68,35,184,1) 100%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: white;
+
+}
+h1{
+    text-align: center;
+}
+.caja{    
+     justify-content: center;
+     text-align: center;
+    overflow: hidden;
+    margin: 10px;
+    margin-top: 10vw;
+    background-color: rgba(70, 32, 206, 0.288);
+    
+}
+.abajo{
+    justify-content: center;
+    text-align: center;
+   overflow: hidden;
+   margin: 10px;
+   margin-top: 10vw;
+   bottom: 5vw;
+}
